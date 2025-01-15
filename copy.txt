@@ -22,6 +22,11 @@ python src/train.py --config config/bdd100k_pspnet50_with_onnx.yaml --device 0
 
 
 
+touch src/__init__.py
+touch src/dataset/__init__.py
+touch src/utils/__init__.py
+
+
 
 
 import sys

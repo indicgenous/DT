@@ -1,1 +1,17 @@
-bash scripts/run_train1p_ascend.sh config/bdd100k_pspnet50_with_onnx.yaml 0
+bash scripts/run_train1p_ascend.sh config/bdd100k_pspnet50_with_onnx.yaml 0  
+
+
+
+python src/dataset/create_data_txt.py \
+    --data_root PSPNet/Data/bdd100k \
+    --image_prefix images/training \
+    --mask_prefix labels/training \
+    --output_txt PSPNet/Data/bdd100k/training_list.txt
+ 
+
+
+python src/dataset/create_data_txt.py \
+    --data_root PSPNet/Data/bdd100k \
+    --image_prefix images/validation \
+    --mask_prefix labels/validation \
+    --output_txt PSPNet/Data/bdd100k/validation_list.txt

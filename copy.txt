@@ -19,3 +19,6 @@ python src/dataset/create_data_txt.py \
 
 
 python src/train.py --config config/bdd100k_pspnet50_with_onnx.yaml --device 0
+
+
+PYTHONPATH=$(pwd) python src/train.py --config config/bdd100k_pspnet50_with_onnx.yaml --device 0

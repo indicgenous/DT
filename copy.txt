@@ -1,0 +1,1 @@
+bash scripts/run_train1p_ascend.sh config/bdd100k_pspnet50_with_onnx.yaml 0

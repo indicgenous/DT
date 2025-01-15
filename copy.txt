@@ -15,3 +15,7 @@ python src/dataset/create_data_txt.py \
     --image_prefix images/validation \
     --mask_prefix labels/validation \
     --output_txt PSPNet/Data/bdd100k/validation_list.txt
+
+
+
+python src/train.py --config config/bdd100k_pspnet50_with_onnx.yaml --device 0
